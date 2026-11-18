@@ -1,0 +1,64 @@
+# ---- Compiled output ----
+*.exe
+*.out
+a.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Libraries
+*.a
+*.lib
+*.la
+*.lo
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Debug / linker artifacts
+*.pdb
+*.ilk
+*.idb
+*.map
+*.exp
+*.dSYM/
+*.su
+*.gch
+*.pch
+
+# Dependency files
+*.d
+
+# ---- CMake ----
+build/
+cmake-build-*/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+compile_commands.json
+
+# ---- Editors / IDEs ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vs/
+.idea/
+*.swp
+*~
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
