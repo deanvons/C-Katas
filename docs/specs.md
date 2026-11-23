@@ -1,27 +1,17 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Prime Numbers
+
+Prime number: integer number greater than 1, only divisible by 1 and itself
+
+**Goals:**
+ - Find all prime numbers below a given upper limit
+ - Find the first prime number above a given lower limit
+ - Write some dummy cleanup code before the final return (simply print something)
+ - Define constant MAX equal to 1000
+ - If user give an upper limit lower than 2 or greater than MAX immediately
+   execute the cleanup code and exit the program
+ - Same check for the lower limit
+
+**Tips:**
+ - How to check if x is a prime number:
+   > scan all numbers from 2 to x
+   > use the modulo operator to find out if x is prime
