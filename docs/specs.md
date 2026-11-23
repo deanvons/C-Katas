@@ -1,27 +1,28 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Planetary Alignment
+
+**Context:**
+ - three planets revolving around a star
+ - each orbit takes x units of time
+ - unit of time: one day (86,400 seconds)
+
+**Goals:**
+ - calculate how many days elapse between planets linear alignment
+ - calculate how many revolutions each planet makes around the star in this time
+
+**Tips:**
+ - orbits duration: a, b, c (days) --> linear alignment every lcm(a, b, c) days
+ - each planet completes lcm(a, b, c) / x orbits around the star
+
+**Trace:**
+ - get the duration (in days) of orbits a, b, c from the user
+ - calculate lcm(a, b, c):
+   > store the maximum between a, b, c
+   > iterate no more than 10,000 times
+   > check lcm(a, b, c) using the stored max and the modulo operator
+   > if exceeded the maximum number of iterations: print a warning
+   > else: print the result and the number of complete revolution for each planet
+
+**Test:**
+ - calculate Earth-Venus-Mercury linear alignment
+ - calculate Earth-Mars-Jupiter linear alignment
+ - check orbits duration here: https://spaceplace.nasa.gov/years-on-other-planets/en/
