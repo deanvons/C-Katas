@@ -1,27 +1,13 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Random Matrix
+
+Generate a random matrix and display it in direct and transposed form
+
+**Goals:**
+ - Generate random matrix with number of rows and columns given by the user
+ - Check that 1 < rows <= 10, the same for the columns
+ - Generate random matrix with 0 <= numbers < upper limit given by the user
+ - Check that 1 < upper limit <= 1000
+ - Display the matrix in direct and transposed form
+
+**Tips:**
+ - To generate random numbers below an upper bound you may find the modulo operator useful...

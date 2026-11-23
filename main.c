@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
+    printf("=== Random Matrix ===\n");
+
     getchar();
-    return 0;
+    return EXIT_SUCCESS;
 }
