@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
+    printf("=== Workouts Heart Rate Monitor ===\n");
+
     getchar();
-    return 0;
+    return EXIT_SUCCESS;
 }

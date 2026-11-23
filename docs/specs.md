@@ -1,27 +1,27 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Workouts Heart Rate Monitor
+
+Build a heart rate monitor for your workouts!
+
+**Maximum heart rate (Tanaka formula):**
+
+```text
+hr_max = 208 - 0.7 * AGE
+```
+
+**Zones:**
+
+| Zone | Range | Description |
+|---|---|---|
+| 1 | below 50% | rest |
+| 2 | 50%-60% | very light, active recovery |
+| 3 | 60%-70% | light, cardio training, improves your general endurance |
+| 4 | 70%-80% | moderate, aerobic fitness, improve your efficiency |
+| 5 | 80%-90% | hard, raise the anaerobic threshold, improve your speed endurance |
+| 6 | above 90% | peak performance, improve your power, only for pros! |
+
+**Goals:**
+ - Ask for the user's age
+ - Print the hr max
+ - Print each training zone in the format 'id, hr min, hr max, description'
+ - In loop ask for the current BPM
+ - Print the current zone in the format 'id, description'
