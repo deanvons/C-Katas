@@ -1,27 +1,20 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Prime Numbers Further Improved
+
+Prime number: integer number greater than 1, only divisible by 1 and itself
+
+**Goals:**
+ - Find all prime numbers below a given upper limit given by the user
+ - Check that 2 < upper limit <= 1 million
+ - Store prime numbers in an array of 100k integers
+ - Optimize the program by using stored prime numbers
+ - Compare the execution time of the simple version with the optimized one
+ - Implement printing of primes found separately from the algorithm
+ - Print up to 50 prime numbers found
+
+**Simple version:**
+ - given an input number, n, check whether it is evenly divisible by ANY NUMBER
+   between 2 and sqrt(n) (i.e. that the division leaves no remainder)
+
+**Optimized version:**
+ - given an input number, n, check whether it is evenly divisible by ANY PRIME NUMBER
+   between 2 and sqrt(n) (i.e. that the division leaves no remainder)

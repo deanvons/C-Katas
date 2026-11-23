@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
+    printf("=== Prime Numbers Further Improved ===\n");
+
     getchar();
-    return 0;
+    return EXIT_SUCCESS;
 }
