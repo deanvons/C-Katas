@@ -1,27 +1,20 @@
-/**
-   * === Bunch Of Constants ===
-   *
-   * Define the following numeric constants:
-   *  - moonLanding: 1969
-   *  - speedOfLight: 299792458
-   *  - pi: 3.142
-   *  - hexaDead: 0xDEAD
-   *  - hexaSecret: 51966
-   *
-   * Print with following formats:
-   *  - moonLanding:
-   *      - integer, 10 characters width, padded with spaces
-   *      - integer, 10 characters width, padded with zeroes
-   *  - speedOfLight:
-   *      - floating point without digits after decimal point
-   *      - scientific notation with 3 digit of precision
-   *  - pi:
-   *      - floating point with 2 digits of precision
-   *      - scientific notation with 1 digit of precision, sign forced
-   *  - hexaDead:
-   *      - unsigned hexadecimal integer, uppercase, leading 0x
-   *      - unsigned integer, 6 characters width
-   *  - hexaSecret:
-   *      - unsigned hexadecimal integer, lowercase, no leading 0x
-   *
-   */
+# Spaceship Thrust
+
+We are working on the man-machine interface of a revolutionary spaceship.
+Define enumeration constants for different predefined thrust levels, these
+levels will be used to communicate with the engine controller.
+
+**The thrust levels are:**
+ - none:     0
+ - low:      5
+ - medium:   9
+ - high:     12
+ - maximum:  20
+
+Then launch the rocket!
+
+**We now want to log the thrust level in some critical points:**
+ - set thrust to none ---> log ready to go level
+ - set thrust to maximum ---> log take off level
+ - set thrust to medium ---> log entry into the ionosphere
+ - set thrust to low ---> log traveling to deep space
